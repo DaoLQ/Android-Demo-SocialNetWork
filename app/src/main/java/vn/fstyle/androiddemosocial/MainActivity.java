@@ -1,8 +1,11 @@
 package vn.fstyle.androiddemosocial;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import vn.fstyle.androiddemosocial.facebook.FacebookActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClickButton(View v) {
         switch (v.getId()) {
             case R.id.btnFacebook:
+                startActivity(new Intent(this, FacebookActivity.class));
                 break;
             case R.id.btnTwitter:
                 break;
