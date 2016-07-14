@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Android-Demo-Social</string>
+    <string name="facebook_app_id">600421196797959</string>
 </resources>
