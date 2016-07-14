@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Android-Demo-Social</string>
+    <string name="twitter_consumer_key">gYsJuj1qfR5XTbqgdqM8wS50A</string>
+    <string name="twitter_consumer_secret">UWiRhKAHwpMDLd32wXltLxnCYo0FfRntejc89v7dJYHAGSbeCc</string>
 </resources>
