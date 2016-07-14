@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.webkit.CookieManager;
+import android.webkit.CookieSyncManager;
 
 import com.twitter.sdk.android.core.Callback;
 import com.twitter.sdk.android.core.Result;
@@ -37,6 +39,9 @@ public class TwitterActivity extends AppCompatActivity {
                     return;
                 }
                 getTwitterUserProfile();
+                break;
+            case R.id.btnLogoutTwitter:
+                logOutTwitter();
                 break;
         }
     }
@@ -71,6 +76,17 @@ public class TwitterActivity extends AppCompatActivity {
                 Log.d("", "DebugLog failure : " + e.getMessage());
             }
         });
+    }
+
+    private void logOutTwitter() {
+        // Clear cookies
+        CookieSyncManager.createInstance(getApplicationContext());
+        CookieManager cookieManager = CookieManager.getInstance();
+        cookieManager.removeSessionCookie();
+        // Clear session
+        TwitterCore.getInstance().getAppSessionManager().clearActiveSession();
+        // Logout
+        TwitterCore.getInstance().logOut();
     }
 
     @Override

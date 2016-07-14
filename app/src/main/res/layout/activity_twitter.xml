@@ -19,4 +19,13 @@
         android:layout_centerInParent="true"
         android:onClick="onClickButton"
         android:text="Get User Profile" />
+
+    <Button
+        android:id="@+id/btnLogoutTwitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGetUserProfileTwitter"
+        android:layout_centerInParent="true"
+        android:onClick="onClickButton"
+        android:text="Logout" />
 </RelativeLayout>
