@@ -1,8 +1,11 @@
 package vn.fstyle.androiddemosocial;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import vn.fstyle.androiddemosocial.line.LineActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btnGooglePlus:
                 break;
             case R.id.btnLine:
+                startActivity(new Intent(this, LineActivity.class));
                 break;
         }
     }
