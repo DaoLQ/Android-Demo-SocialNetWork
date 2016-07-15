@@ -30,16 +30,16 @@
             <category android:name="android.intent.category.DEFAULT" />
             <category android:name="android.intent.category.BROWSABLE" />
 
-            <data android:scheme="line.1474154441" />
+            <data android:scheme="line.1474169535" />
         </intent-filter>
     </activity>
 
     <meta-data
         android:name="jp.line.sdk.ChannelId"
-        android:value="1474154441" />
+        android:value="1474169535" />
     <meta-data
         android:name="jp.line.sdk.AuthScheme"
-        android:value="line.1474154441" />
+        android:value="line.1474169535" />
 
     <activity
         android:name="jp.line.android.sdk.activity.WebLoginActivity"
